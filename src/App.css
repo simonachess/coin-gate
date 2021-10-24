@@ -76,7 +76,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -102,7 +101,6 @@ body {
 #navbar .menu-left {
   display: flex;
   align-items: center;
-  
 }
 
 #signup {
@@ -130,7 +128,6 @@ body {
   border: 1px solid #16DFB5;
   padding: 6px 12px;
 }
-
 
 #navbar .menu-container .bar1, #navbar .menu-container .bar2, #navbar .menu-container .bar3 {
   width: 26px;
@@ -199,7 +196,7 @@ body {
     overflow: hidden;
   }
   #navbar .menu-options.change {
-    height:auto;
+    height: auto;
     border-top: 1px solid #eee;
   }
   #navbar .menu-options.change img {
@@ -214,4 +211,8 @@ body {
     /* margin-right: 10px;
     margin-bottom: 10px; */
   }
+}
+
+@media screen and (max-width: 1770px) {
+
 }
