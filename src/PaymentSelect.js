@@ -1,6 +1,5 @@
 import React from 'react';
 import './PaymentSelect.css'
-import EuroIcon from '@mui/icons-material/Euro';
 
 export default function PaymentSelect() {
 
