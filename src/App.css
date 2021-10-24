@@ -213,12 +213,17 @@ body {
   }
 }
 
-@media screen and (max-width: 1820px) {
+@media screen and (max-width: 1536px) {
   .main-container {
-    bottom: 10%;
-    left: 7%;
+    bottom: 5%;
+    left: 5%;
   }
   .text-form-container {
-    top: 30%;
+    top: 37%;
+    left: 5%;
   }
-}
+  #navbar {
+    width: 100%;
+    min-height: 70px;}
+
+  }
