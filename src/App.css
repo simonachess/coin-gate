@@ -226,6 +226,16 @@ body {
   .text-form-container {
     top: 35%;
     left: 8%;
-    
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .main-container {
+    width: 800px;
+    left: 12%;
+  }
+  .text-form-container {
+    top: 15%;
+    left: 1%;
   }
 }
