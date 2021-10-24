@@ -1,0 +1,55 @@
+.select-container {
+    width: 465px;
+    height: 528px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    transform: rotate(5.53deg);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.select-container p {
+    color: #000;
+    font-size: 15px;
+    margin: 0;
+}
+
+.container-background {
+    width: 464px;
+    height: 510px;
+    background-color: #E9F6FF;
+    transform: rotate(-5.53deg);
+    border: none;
+    border-radius: 30px;
+}
+
+.btn-container {
+    width: 412px;
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#submit-btn, #submit-btn:disabled {
+    width: 100%;
+    border: none;
+    border-radius: 5px 40px 40px 40px;
+    font-size: 16px;
+    padding: 16px;
+    color: #fff;
+}
+
+#submit-btn {
+    background-color: #16DFB5;
+}
+
+#submit-btn:disabled {
+    background-color: #B5B5B5;
+}

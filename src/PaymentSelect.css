@@ -1,0 +1,26 @@
+.payment-select {
+    width: 100%;
+}
+
+.payment-row {
+    margin: 1.5rem 0;
+    width: 412px;
+    height: 48px;
+    background-color: #fff;
+    border: #D9D9D9 1px solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 25px 0 25px;
+}
+
+.payment-row select {
+    font-size: 15px;
+    line-height: 22.5px;
+    border: none;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    outline:none;
+}
