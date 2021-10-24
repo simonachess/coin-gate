@@ -48,7 +48,7 @@ function App() {
               <p>
                 Why bother going through complicated exchanges? Buy cryptocurrency with top payment methods like SEPA bank transfer, Credit and Debit Card, Apple Pay, Mobile balance or Klarna.  You can buy Bitcoin, Ethereum or any other popular crypto directly to your personal wallet without making any initial deposits. It's as easy as it gets!
               </p>
-              <a href="http://www.google.com" target="_blank" rel="noreferrer">
+              <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
                 <span className="green-word">Start now &gt; </span>
               </a>
             </div>
