@@ -1,6 +1,6 @@
 .select-container {
-    width: 465px;
-    height: 528px;
+    width: 464px;
+    height: 510px;
     border: none;
     border-radius: 30px;
     background-color: #fff;
@@ -15,12 +15,6 @@
     padding-bottom: 30px;
 }
 
-.select-container p {
-    color: #000;
-    font-size: 15px;
-    margin: 0;
-}
-
 .container-background {
     width: 464px;
     height: 510px;
@@ -28,6 +22,13 @@
     transform: rotate(-5.53deg);
     border: none;
     border-radius: 30px;
+    position: relative;
+}
+
+.select-container p {
+    color: #000;
+    font-size: 15px;
+    margin: 0;
 }
 
 .btn-container {

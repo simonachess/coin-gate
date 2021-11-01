@@ -1,11 +1,9 @@
 import React from 'react';
 import './PaymentSelect.css'
-import EuroIcon from '@mui/icons-material/Euro';
 
 export default function PaymentSelect() {
 
     const payments = [`Bank transfer`, `Paypal`, `Master Card` ];
-
 
     return (
 

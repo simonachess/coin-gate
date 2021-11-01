@@ -8,51 +8,25 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-.main-container {
-  border: none;
-  border-radius: 40px;
-  width: 100%;
-  height: 100%;
-  background-color: #5022ED;
-  transform: rotate(-2.44deg);
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
-}
-
-.text-form-container {
-  position: absolute;
-  width: 860px;
-  height: 600px;
-  top: 35%;
-  left: 10%;
-  display: flex;
-  justify-content: space-between;
-  transform: rotate(2.44deg);
-}
-
-.text-container {
-  width: 642px;
-  height: 600px;
-}
-
-.text-container h1 {
+h1 {
   line-height: 66px;
   font-size: 60px;
   color: #fff;
+  padding: 1rem 0;
 }
 
-.text-container p {
+p {
   line-height: 31px;
   font-size: 24px;
   margin: 50px 0 50px 0;
   color: #fff;
+  padding: 1rem 0;
 }
 
-.text-container a {
+a {
   line-height: 21px;
   font-size: 18px;
   text-decoration: none;
@@ -62,21 +36,40 @@ body {
   color: #16DFB5;
 }
 
-.form-container {
+.background {
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  background-color: #5022ED;
+  transform: rotate(-2.44deg);
   position: absolute;
-  left: 93%;
-  top: -10%;
+  padding: 10rem 2rem;
+  top: 0;
+  left: 10%;
+}
+
+.main-container {
+  transform: rotate(2.44deg);
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
 }
 
 #navbar {
   width: 100%;
-  min-height: 100px;
+  min-height: 10%;
   background-color: #fff;
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   position: fixed;
   top: 0;
   left: 0;
@@ -102,26 +95,30 @@ body {
 #navbar .menu-left {
   display: flex;
   align-items: center;
-  
 }
 
 #signup {
-  width: 100%;
   background-color: #16DFB5;
   border: none;
   border-radius: 5px 40px 40px 40px;
-  padding: 16px;
+  padding: 0.5rem;
   border: 1px solid transparent;
+  transition: all ease-in-out 0.3s;
 }
 
 #signup a {
   color: #fff;
 }
 
+#signup:hover a {
+  color: #16DFB5;
+}
+
 #signup:hover {
   background-color: #fff;
   color: #16DFB5;
   border: 1px solid #16DFB5;
+  cursor: pointer;
 }
 
 #navbar .menu-container {
@@ -130,7 +127,6 @@ body {
   border: 1px solid #16DFB5;
   padding: 6px 12px;
 }
-
 
 #navbar .menu-container .bar1, #navbar .menu-container .bar2, #navbar .menu-container .bar3 {
   width: 26px;
@@ -155,39 +151,9 @@ body {
 }
 
 @media screen and (max-width: 1279px) {
-  body {
-    overflow: auto;
-  }
-  .main-container {
-    height: 1350px;
-    top: 0%;
-    left: 0%;
-  }
-  .text-form-container {
-    width: 860px;
-    height: 600px;
-    top: 12%;
-    left: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transform: rotate(2.44deg);
-  }
-  .form-container {
-    position: unset;
-    margin: 10% 0;
-  }
-  .main-container {
-    bottom: 0;
-    left: 0;
-  }
-  .info-text {
-    position: absolute;
-    width: inherit;
-  }
   #navbar {
     align-items: flex-end;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   #navbar .menu-options {
     display: flex;
@@ -199,7 +165,7 @@ body {
     overflow: hidden;
   }
   #navbar .menu-options.change {
-    height:auto;
+    height: auto;
     border-top: 1px solid #eee;
   }
   #navbar .menu-options.change img {
@@ -211,7 +177,8 @@ body {
   #navbar .menu-container {
     display: inline-block;
     margin: 15px;
-    /* margin-right: 10px;
-    margin-bottom: 10px; */
+  }
+  #signup {
+    width: auto;
   }
 }

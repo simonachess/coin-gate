@@ -11,7 +11,6 @@ export default function currencyForm() {
         <div className="container-background">
             <div className="select-container">
                 <CurrencySelect />
-                
                 <div><p>Payment method</p>
                 <PaymentSelect /></div>
                 <div className="btn-container">
