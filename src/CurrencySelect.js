@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './CurrencySelect.css'
 
@@ -28,7 +28,6 @@ export default function CurrencySelect() {
         Axios.get(
             "./rates.json")
             .then((res) => {
-                const rates = res.data.merchant;
                 const firstCurrency = Object.keys(res.data.merchant)[14];
                 const secondCurrency = Object.keys(res.data.merchant)[28];
                 setOptions(Object.keys(res.data.merchant));
